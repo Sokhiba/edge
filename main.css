@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#93CB52;
+    --secondary-color:#333333;
+    --bg-color:#F4F4F4;
+}
+
+/* navbar */
+
+#navbar{
+background-color: var(--secondary-color);
+color: #fff;
+position: sticky;
+top: 0;
+}
+.nav-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.navbar-brand img{
+    width: 30px;
+    display: inline-block;
+    color: var(--main-color);
+}
+.navbar-brand span{
+    color: var(--main-color);
+}
+.nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.nav-item{
+    padding:10px;
+    border-radius: 10px;
+}
+.nav-item:hover{
+    background-color: var(--main-color);
+}
+.nav-item .nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* header */
+
+#header{
+    background-image: url('./img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-content{
+    background-color: rgba(0,0,0, 0.6);
+    text-align: center;
+    color: #fff;
+    padding: 180px 0px;
+
+}
+.header-content h1{
+    font-size: 64px;
+}
+.header-content p{
+    font-size: 22px;
+    margin:32px 0px;
+}
+.header-content button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+   
+}
+
+
+/* main */
+
+/* what section */
+#what .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    
+}
+#what h1{
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 32px;
+    font-size: 44px;
+}
+#what h1 span{
+    color: var(--main-color);
+}
+
+.card{
+width: 33.3%;
+margin: 0px 32px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.card-header .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card-header img{
+        width: 30px;
+    
+}
+.card-body p{
+    margin-top: 16px;
+    font-size: 18px;
+}
